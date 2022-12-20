@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'portfolio\base.html' %}
+{% block content %}
+<h1>Blog</h1>
+<h2>Pawel was written {{ posts_count }} blog{{ posts_count|pluralize}}</h2>
+{% for blog in blogs %}
+<h2>
+    <a href="{{ blog.title }}"> {{ blog.title }} </a>
+</h2>
+<p>
+    <font color="gray">
+        {{ blog.addition_time }}
+    </font>
+</p>
+<p>
+    {{ blog.content | truncatechars:100 }}
+</p>
+{% endfor %}
+{% endblock %}
+</body>
+</html>
