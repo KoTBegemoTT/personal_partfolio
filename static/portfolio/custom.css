@@ -6,6 +6,10 @@
     color: rgba(0,0,0,.5) !important;
 }
 
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
 body {
     font-family: 'Lato', sans-serif;
 }

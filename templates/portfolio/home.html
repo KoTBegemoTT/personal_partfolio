@@ -17,15 +17,16 @@
 
     {% load static %}
 
-    <h1>Pavel's portfolio</h1>
-    <a href="blog">Blog</a>
-    <br>
-    <a href="{% static 'portfolio/resume.pdf' %}">Resume</a>
-    <br>
-    <img src="{% static 'portfolio/resumeImage.png' %}">
+    <div class="row justify-content-center my-3">
+        <div class="col-5">
+            <img class="img-fluid" src="{% static 'portfolio/resumeImage.png' %}">
+        </div>
+    </div>
 
+    <div class="mt-2">
+        <h1>Portfolio</h1>
+    </div>
     {% for project in projects %}
-    <h1>project</h1>
     <p>project.title</p>
     <img src="{{ project.image.url }}">
     {% if project.url %}
