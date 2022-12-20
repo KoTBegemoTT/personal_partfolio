@@ -13,20 +13,17 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Portfolio</a>
+  <a class="navbar-brand" href="{% url 'home' %}">Portfolio</a>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" target="_blank" href="https://t.me/Christian_Tyler">telegram</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" target="_blank" href="https://vk.com/id137549524">Vk</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li>
-        <a href="blog">Blog</a>
+        <a class="nav-link" href="{% url 'blog:all_blogs' %}">Blog</a>
       </li>
     </ul>
   </div>

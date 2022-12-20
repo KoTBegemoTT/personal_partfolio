@@ -3,8 +3,6 @@ from .models import Blog
 from django.shortcuts import get_object_or_404
 
 
-app_name = 'blog'
-
 
 def all_blogs(request):
     blogs = Blog.objects.all()
